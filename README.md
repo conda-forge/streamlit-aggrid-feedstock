@@ -1,11 +1,11 @@
-About streamlit-aggrid
-======================
+About streamlit-aggrid-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/streamlit-aggrid-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/PablocFonseca/streamlit-aggrid
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/streamlit-aggrid-feedstock/blob/main/LICENSE.txt)
 
 Summary: Streamlit component implementation of ag-grid
 
