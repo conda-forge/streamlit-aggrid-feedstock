@@ -1,13 +1,13 @@
 {% set name = "streamlit-aggrid" %}
-{% set version = "0.3.4.post3" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0cb9332199e7735289a673efabc913e1a3466cc188bc025bec2c50c32ab1989a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0f159161c35ed7319f89539f7af4bb3c735fa02f5600b127081c16f970d6e321
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - python >=3.7,<4.0
   run:
     - pandas >=1.2
+    - altair <5
     - python >=3.7,<4.0
     - python-decouple >=3.6
     - streamlit >=0.87.0
