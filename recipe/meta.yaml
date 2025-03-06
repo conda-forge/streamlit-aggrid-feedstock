@@ -21,11 +21,10 @@ requirements:
     - poetry
     - python {{ python_min }}
   run:
-    - pandas >=1.2
-    - altair <5
+    - pandas >=1.4
     - python >={{ python_min }},<4.0
-    - python-decouple >=3.6
-    - streamlit >=0.87.0
+    - python-decouple
+    - streamlit >=1.2
 
 test:
   imports:
