@@ -1,5 +1,5 @@
 {% set name = "streamlit-aggrid" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 4541d135de98acc5796676bc1ed9564612ef6a88ec0cd99a0875f20c0f1fecc8
+  sha256: 88563dcac28bf8242ac8c1e2f8996e137ee73cca4ac33d0fe64871409463e97c
 
 build:
   noarch: python
@@ -21,11 +21,10 @@ requirements:
     - poetry
     - python {{ python_min }}
   run:
-    - pandas >=1.2
-    - altair <5
+    - pandas >=1.4
     - python >={{ python_min }},<4.0
-    - python-decouple >=3.6
-    - streamlit >=0.87.0
+    - python-decouple
+    - streamlit >=1.2
 
 test:
   imports:
