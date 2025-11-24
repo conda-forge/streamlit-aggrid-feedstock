@@ -1,5 +1,5 @@
 {% set name = "streamlit-aggrid" %}
-{% set version = "1.2.0.post1" %}
+{% set version = "1.2.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d06dbe3dab6999cbed5eedebab48131301f994802285f6f4bffeb4dba513021f
+  sha256: 3d4e9e7444e5d12f4577efce129c27933c499482d87d0a77bd331f6aa65f2709
 
 build:
   noarch: python
